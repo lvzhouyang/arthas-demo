@@ -1,6 +1,5 @@
 package org.kyle.arthas.demo.service;
 
-import org.kyle.arthas.demo.web.UserController;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
