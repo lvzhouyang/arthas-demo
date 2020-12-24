@@ -24,6 +24,6 @@ public class ArthasDemoApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(ArthasDemoApplication.class, args);
-        Arthas.start();
+//        Arthas.start();
     }
 }

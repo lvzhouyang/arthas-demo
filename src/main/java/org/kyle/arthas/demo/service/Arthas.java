@@ -18,7 +18,7 @@ import java.util.concurrent.Executors;
  */
 public class Arthas {
 
-    private static final Logger log = LoggerFactory.getLogger(UserServiceImpl.class);
+    private static final Logger log = LoggerFactory.getLogger(Arthas.class);
 
     private static HashSet hashSet = new HashSet();
     /**
@@ -28,11 +28,11 @@ public class Arthas {
 
     public static void start() {
         // 模拟 CPU 过高
-//         cpu();
+         cpu();
         // 模拟线程阻塞
 //        thread();
         // 模拟线程死锁
-        deadThread();
+//        deadThread();
         // 不断的向 hashSet 集合增加数据
 //        addHashSetThread();
     }
@@ -100,7 +100,7 @@ public class Arthas {
             while (true) {
                 log.debug("thread start");
                 try {
-                    Thread.sleep(3000);
+                    Thread.sleep(30);
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
